@@ -70,9 +70,11 @@ The S5-DSCR model employs DSC architecture to perform spatial super-resolution b
 If you use this code, please cite:
 
 ```bibtex
-@article{ali2025depth,
-  title={Depth Separable architecture for Sentinel-5P Super-Resolution},
+@inproceedings{ali2025depth,
+  title={Depth Separable Architecture for Sentinel-5P Super-Resolution},
   author={Ali, Hyam Omar and Abraham, Romain and Galerne, Bruno},
-  journal={arXiv preprint arXiv:2501.17210},
-  year={2025}
+  booktitle={IGARSS 2025-2025 IEEE International Geoscience and Remote Sensing Symposium},
+  pages={7524--7529},
+  year={2025},
+  organization={IEEE}
 }
