@@ -3,14 +3,20 @@
 
 # SELF-SUPERVISED 
 
-```markdown
 <h1 align="center">
-  Self-Supervised Super-Resolution for Sentinel-5P Hyperspectral Images
+  <a href="https://arxiv.org/abs/2501.17210">
+    Self-Supervised Super-Resolution for Sentinel-5P Hyperspectral Images
+  </a>
 </h1>
 
-<h3 align="center">Hyam Omar Ali, Romain Abraham, Bruno Galerne</h3>
 
-<p align="center"><strong>Available on arXiv</strong></p>
+<h3 align="center">Hyam Omar Ali¹ ², Romain Abraham¹, Bruno Galerne¹ ³</h3>
+
+<p align="center">¹ Institut Denis Poisson, Université d’Orléans, Université de Tours, CNRS, France</p>  
+<p align="center">² Faculty of Mathematical Sciences, University of Khartoum, Sudan</p>  
+<p align="center">³ Institut Universitaire de France (IUF)</p>
+
+<p align="center"><strong>Accepted at IGARSS 2025</strong></p>
 
 ---
 
