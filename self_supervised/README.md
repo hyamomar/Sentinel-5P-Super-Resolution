@@ -1,9 +1,7 @@
 
 ---
 
-# ✅ 3. SELF-SUPERVISED README (`self_supervised/README.md`)
-
-👉 This is your strongest new contribution—written in the same academic style.
+# SELF-SUPERVISED 
 
 ```markdown
 <h1 align="center">
@@ -20,7 +18,7 @@ Sentinel-5P (S5P) plays a critical role in atmospheric and environmental monitor
 
 Existing super-resolution approaches for S5P rely on supervised learning with synthetic degradation. Since true high-resolution data do not exist, these approaches remain limited in real-world applications.
 
-This work introduces a **self-supervised hyperspectral super-resolution framework** specifically designed for Sentinel-5P, enabling training without high-resolution ground truth.
+This work introduces a self-supervised hyperspectral super-resolution framework specifically designed for Sentinel-5P, enabling training without high-resolution ground truth.
 
 ---
 
