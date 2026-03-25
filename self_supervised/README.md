@@ -1,3 +1,10 @@
+
+---
+
+# ✅ 3. SELF-SUPERVISED README (`self_supervised/README.md`)
+
+👉 This is your strongest new contribution—written in the same academic style.
+
 ```markdown
 <h1 align="center">
   Self-Supervised Super-Resolution for Sentinel-5P Hyperspectral Images
