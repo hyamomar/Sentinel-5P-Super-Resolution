@@ -10,13 +10,16 @@
 </h1>
 
 
-<h3 align="center">Hyam Omar Ali¹ ², Romain Abraham¹, Bruno Galerne¹ ³</h3>
+<h3 align="center">
+Hyam Omar Ali¹ ², Antoine Crosnier¹ ³, Romain Abraham¹, Baptiste Combelles⁴, Fabrice Jégou⁴, Bruno Galerne¹ ⁵
+</h3>
 
-<p align="center">¹ Institut Denis Poisson, Université d’Orléans, Université de Tours, CNRS, France</p>  
+<p align="center">¹ Université d’Orléans, Université de Tours, CNRS, Institut Denis Poisson (IDP), UMR 7013, France</p>  
 <p align="center">² Faculty of Mathematical Sciences, University of Khartoum, Sudan</p>  
-<p align="center">³ Institut Universitaire de France (IUF)</p>
+<p align="center">³ ENS Lyon, France</p>  
+<p align="center">⁴ Laboratory of Physics and Chemistry of the Environment and Space (LPC2E), CNRS UMR 7328, University of Orléans, France</p>  
+<p align="center">⁵ Institut Universitaire de France (IUF), France</p>
 
-<p align="center"><strong>Accepted at IGARSS 2025</strong></p>
 
 ---
 
