@@ -1,16 +1,9 @@
-
----
-
-# ✅ 2. SUPERVISED README (`supervised/README.md`)
-
-👉 This keeps your original content but improves flow/consistency.
-
-```markdown
 <h1 align="center">
   <a href="https://arxiv.org/abs/2501.17210">
     Depth Separable Architecture for Sentinel-5P Super-Resolution
   </a>
 </h1>
+
 
 <h3 align="center">Hyam Omar Ali¹ ², Romain Abraham¹, Bruno Galerne¹ ³</h3>
 
@@ -18,7 +11,8 @@
 <p align="center">² Faculty of Mathematical Sciences, University of Khartoum, Sudan</p>  
 <p align="center">³ Institut Universitaire de France (IUF)</p>
 
-<p align="center"><strong>Accepted at IGARSS 2025</strong></p>
+<p align="center"><strong>Pulished at IGARSS 2025</strong></p>
+
 
 ---
 
