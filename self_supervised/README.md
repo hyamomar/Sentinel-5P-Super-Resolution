@@ -39,6 +39,37 @@ This work introduces a self-supervised hyperspectral super-resolution framework 
 
 ---
 
+## Methodology
+
+We propose a self-supervised hyperspectral super-resolution framework for Sentinel-5P that learns spatial enhancement directly from degraded observations, without requiring high-resolution ground truth.
+
+The approach relies on a physics-based degradation model describing the S5P acquisition process, combined with sensor-aware noise estimation derived from Signal-to-Noise Ratio (SNR) metadata. This enables realistic modelling of measurement noise across spectral bands.
+
+Training is performed using a composite self-supervised loss that combines:
+
+- **Stein’s Unbiased Risk Estimator (SURE):** enforces consistency with the observed measurements  
+- **Equivariant Imaging constraint:** ensures stability of the reconstruction under spatial scaling  
+
+Together, these components allow the model to learn meaningful spatial structures directly from real observations.
+
+---
+
+### Network Architecture
+
+We introduce U-Net–based architectures tailored for hyperspectral data, incorporating Depthwise Separable Convolutions (DSC) for efficient feature extraction and improved spectral fidelity.
+
+<p align="center">
+  <img src="../images/global.png" width="750"/>
+</p>
+
+<p align="center">
+  <img src="../images/unet_v2.png" width="750"/>
+</p>
+
+The model follows a residual learning strategy, refining bicubic upsampled inputs to recover high-frequency spatial details.
+
+---
+
 ## Results
 
 The proposed approach achieves:
