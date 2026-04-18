@@ -11,30 +11,22 @@
 <p align="center">² Faculty of Mathematical Sciences, University of Khartoum, Sudan</p>  
 <p align="center">³ Institut Universitaire de France (IUF)</p>
 
-<p align="center"><strong>Pulished at IGARSS 2025</strong></p>
+<p align="center"><strong>Published at IGARSS 2025</strong></p>
 
 
----
+This repository contains the implementation of the [S5-DSCR model](https://arxiv.org/abs/2501.17210), a novel super-resolution (SR) approach designed to enhance the spatial resolution of Sentinel-5 Precursor (S5P) satellite data. The S5P satellite provides extensive hyperspectral (HS) images across eight spectral bands, each containing approximately 500 channels. The S5-DSCR model leverages Depth Separable Convolution (DSC) architecture to effectively exploit cross-channel correlations, thereby improving the spatial resolution of S5P data. 
 
-This repository contains the implementation of the S5-DSCR model, a deep learning approach designed to enhance the spatial resolution of Sentinel-5 Precursor (S5P) hyperspectral data.
 
-The S5P satellite provides extensive hyperspectral observations across eight spectral bands, each containing approximately 500 channels. The proposed model leverages Depthwise Separable Convolution (DSC) to efficiently exploit spatial and spectral correlations while maintaining a lightweight architecture.
-
----
-
-<p align="center">
-  <img src="../supervised/images/SR_results.png" width="750"/>
-</p>
-
-<p align="center"><em>Super-resolution results for bands 3, 5 and 7. Each image is displayed using the first three PCA components.</em></p>
+![Alt text](images/SR_results.png)
+<p align="center"><em>Figure 1: SR results of S5-DSCR model for bands 3, 5 and 7. For visualisation, each image is displayed in the first three PCA components of the ground truth</em></p>
 
 ---
 
 ## Objectives
 
-- Improve the spatial resolution of Sentinel-5P data  
-- Exploit spatial and spectral correlations in hyperspectral imagery  
-- Train models independently for each spectral band  
+- Improve the spatial resolution of S5P data by addressing the physical limitations of S5P's spatial resolution by applying advanced SR techniques.
+- Use DSC architecture to exploit spatial and spectral relationships within hyperspectral images.
+- Train the model separately for each of the eight spectral bands of S5P data to account for their unique spectral characteristics.
 
 ---
 
@@ -42,58 +34,54 @@ The S5P satellite provides extensive hyperspectral observations across eight spe
 
 ### Dataset 
 
-Sentinel-5P Level-1B radiance data were used as the primary data source. These data are freely accessible through the Copernicus Data Space Ecosystem.
+We used Sentinel-5P radiance data as the primary source of images for this study. These data are freely accessible on [Copernicus’ official website](https://dataspace.copernicus.eu/) as Level-1B radiance data. The dataset comprises data from $15$ orbits covering distinct regions acquired on January 4, 2023, and September 7, 2023. 
 
-The dataset consists of 15 orbits acquired on January 4, 2023 and September 7, 2023. Each orbit includes eight spectral bands, each with approximately 500 channels.
+Each orbit contains radiance data of eight distinct bands with around and each of these spectral bands contain around 500 channels. Due to orbital and regional variations, the radiance data exhibits various spatial dimensions. The full radiance image spans a range of $4172$ to $3735$ along-track (scanlines) and $450$ to $215$  across-track (ground pixels), depending on the specific region and band. To ensure consistency and computational efficiency,  we cropped each radiance image into multiple images of size $512\times256$ for all bands and $512\times215$ for SWIR bands.
 
-Due to variations in acquisition geometry, image dimensions vary across bands. To ensure consistency, all images were cropped into fixed-size patches:
-- 512 × 256 (most bands)  
-- 512 × 215 (SWIR bands)  
+![Alt text](images/Image_split.png)
+<p align="center"><em>Figure 1: Full radiance image (HR) with corresponding cropped images. From top to bottom and left to right, the cropped images are shown in the same order as they appear within the full image.</em></p>
 
----
+### The Degradation Model
 
-<p align="center">
-  <img src="../supervised/images/Image_split.png" width="750"/>
-</p>
-
-<p align="center"><em>Full radiance image and corresponding cropped patches.</em></p>
-
----
-
-### Degradation Model
-
-Low-resolution images are generated using a physics-based degradation model that simulates the S5P acquisition process, including spatial blurring. A scaling factor of ×4 is applied.
+The HS images were degraded using the [degradation model](https://github.com/alcarbone/S5P_SISR_Toolbox/blob/main/) by [Carbone et al.](https://ieeexplore.ieee.org/document/10499875?source=authoralert) to simulate the LR images. This process involves simulating the real-world image acquisition process, such as blurring, to create realistic LR images that closely resemble the actual HS images. A scaling factor of $4$ was utilised to downsample the HR images.
 
 ---
 
 ## Methodology
 
-The S5-DSCR model employs Depthwise Separable Convolution layers combined with residual connections to efficiently capture spectral dependencies across channels while enhancing spatial resolution.
+The S5-DSCR model employs DSC architecture to perform spatial super-resolution by effectively capturing interdependencies across all spectral channels while reducing computational complexity. We coupled DSC with residual connections to enhance feature extraction and stability.
 
----
 
-<p align="center">
-  <img src="../supervised/images/architecture.png" width="750"/>
-</p>
 
-<p align="center"><em>Architecture of S5-DSCR and its lightweight variant.</em></p>
 
----
+![Alt text](images/architecture.png)
+<p align="center"><em>Figure 2: Architecture of S5-DSCR (L=5) and S5-DSCR-S (L=1) models</em></p>
 
-<p align="center">
-  <img src="../supervised/images/DSC.png" width="500"/>
-</p>
 
-<p align="center"><em>Depthwise Separable Convolution module.</em></p>
+
+![Alt text](images/DSC.png)
+<p align="center"><em>Figure 3: DSC module</em></p>
+
 
 ---
 
 ## Citation
 
+If you use this code, please cite:
+
 ```bibtex
 @inproceedings{ali2025depth,
   title={Depth Separable Architecture for Sentinel-5P Super-Resolution},
   author={Ali, Hyam Omar and Abraham, Romain and Galerne, Bruno},
-  booktitle={IGARSS 2025},
-  year={2025}
+  booktitle={IGARSS 2025-2025 IEEE International Geoscience and Remote Sensing Symposium},
+  pages={7524--7529},
+  year={2025},
+  organization={IEEE}
 }
+
+
+
+
+
+
+
