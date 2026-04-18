@@ -6,18 +6,18 @@
   Supervised and Self-Supervised Deep Learning for Hyperspectral Image Super-Resolution
 </h3>
 
-<p align="center">
-  Hyam Omar Ali, Antoine Crosnier, Romain Abraham, Baptiste Combelles, Fabrice Jégou, Bruno Galerne
-</p>
-
-<p align="center">
-  Université d’Orléans · Université de Tours · CNRS · University of Khartoum · ENS Lyon · LPC2E
-</p>
-
 ---
 
 This repository presents deep learning approaches for enhancing the spatial resolution of Sentinel-5P (S5P) hyperspectral satellite data.  
 It includes both a **supervised framework** and a **self-supervised extension** designed for real-world deployment where high-resolution ground truth is unavailable.
+---
+
+## Overview
+
+- **Supervised SR:** learns from synthetic LR–HR pairs
+- **Self-Supervised SR:** learns directly from real observations without HR ground truth  
+- **Goal:** improve spatial resolution while preserving spectral fidelity in S5P hyperspectral data  
+
 
 ---
 
@@ -29,7 +29,7 @@ It includes both a **supervised framework** and a **self-supervised extension** 
   </a>
 </h4>
 
-<p align="center"><strong>Accepted at IGARSS 2025</strong></p>
+<p align="center"><strong>Published at IGARSS 2025</strong></p>
 
 <p align="center">
   <img src="images/SR_results.png" width="750"/>
@@ -58,14 +58,6 @@ It includes both a **supervised framework** and a **self-supervised extension** 
 <p align="center">
   <em>Qualitative results demonstrating enhanced spatial detail and consistency across spectral bands without using HR ground truth.</em>
 </p>
-
----
-
-## Overview
-
-- **Supervised SR:** learns from synthetic LR–HR pairs using physics-based degradation  
-- **Self-Supervised SR:** learns directly from real observations without HR ground truth  
-- **Goal:** improve spatial resolution while preserving spectral fidelity in S5P hyperspectral data  
 
 ---
 
