@@ -50,7 +50,6 @@ Training is performed using a composite self-supervised loss that combines:
 - **Stein’s Unbiased Risk Estimator (SURE):** enforces consistency with the observed measurements  
 - **Equivariant Imaging constraint:** ensures stability of the reconstruction under spatial scaling  
 
----
 
 ### Network Architecture
 
@@ -65,6 +64,22 @@ We introduce U-Net–based architectures tailored for hyperspectral data, incorp
 </p>
 
 The model follows a residual learning strategy, refining bicubic upsampled inputs to recover high-frequency spatial details.
+
+---
+
+## Dataset
+
+All experiments are conducted using Sentinel-5P Level-1B radiance data, consistent with the supervised framework.
+
+In contrast to the supervised setting, the data preparation is adapted to better suit the self-supervised learning framework. The full across-track width is preserved while the along-track dimension is divided into patches of height 512 pixels. This strategy ensures spatial continuity across the swath and facilitates the enforcement of equivariant consistency across scales.
+
+To improve data quality and training stability:
+
+- Polar regions are discarded due to low radiance values  
+- Negative values close to zero are clipped  
+- Extreme outliers are replaced using local median filtering  
+
+Additionally, BD1 is excluded due to its limited spatial resolution and unreliable geolocation.
 
 ---
 
