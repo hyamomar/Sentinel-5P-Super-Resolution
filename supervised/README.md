@@ -23,7 +23,7 @@ The S5P satellite provides extensive hyperspectral observations across eight spe
 ---
 
 <p align="center">
-  <img src="../images/SR_results.png" width="750"/>
+  <img src="../supervised/images/SR_results.png" width="750"/>
 </p>
 
 <p align="center"><em>Super-resolution results for bands 3, 5 and 7. Each image is displayed using the first three PCA components.</em></p>
