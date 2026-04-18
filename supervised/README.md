@@ -53,7 +53,7 @@ Due to variations in acquisition geometry, image dimensions vary across bands. T
 ---
 
 <p align="center">
-  <img src="../images/Image_split.png" width="750"/>
+  <img src="../supervised/images/Image_split.png" width="750"/>
 </p>
 
 <p align="center"><em>Full radiance image and corresponding cropped patches.</em></p>
@@ -73,7 +73,7 @@ The S5-DSCR model employs Depthwise Separable Convolution layers combined with r
 ---
 
 <p align="center">
-  <img src="../images/architecture.png" width="750"/>
+  <img src="../supervised/images/architecture.png" width="750"/>
 </p>
 
 <p align="center"><em>Architecture of S5-DSCR and its lightweight variant.</em></p>
@@ -81,7 +81,7 @@ The S5-DSCR model employs Depthwise Separable Convolution layers combined with r
 ---
 
 <p align="center">
-  <img src="../images/DSC.png" width="500"/>
+  <img src="../supervised/images/DSC.png" width="500"/>
 </p>
 
 <p align="center"><em>Depthwise Separable Convolution module.</em></p>
