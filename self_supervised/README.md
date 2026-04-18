@@ -31,21 +31,44 @@ This work introduces a self-supervised hyperspectral super-resolution framework 
 
 ## Key Contributions
 
-- Self-supervised SR framework for Sentinel-5P  
-- Composite loss combining SURE and equivariant imaging  
-- Integration of sensor noise statistics (SNR-based)  
-- Efficient DSC-based U-Net architectures  
-- Evaluation without ground-truth HR  
+- We introduce novel U-Net–based architectures tailored for Sentinel-5P hyperspectral data, incorporating Depthwise Separable Convolution (DSC) to improve parameter efficiency while preserving spectral fidelity.  
+
+- We adopt a self-supervised super-resolution framework based on SURE and Equivariant Imaging, and propose a **sensor-aware noise model** derived from Sentinel-5P Signal-to-Noise Ratio (SNR) metadata, enabling the loss function to adapt to band-specific noise characteristics.  
+
+- We demonstrate that the proposed framework achieves performance comparable to supervised learning while enabling super-resolution directly from real observations at their native resolution. The method consistently outperforms bicubic interpolation and is further validated using coincident EMIT hyperspectral data.  
 
 ---
 
 ## Results
 
 The proposed approach achieves:
-- Performance comparable to supervised methods  
-- Improved spatial sharpness over bicubic interpolation  
-- Physically meaningful reconstruction validated with EMIT data  
+- Performance comparable to the counterparts of the supervised methods 
+- Enhanced spatial detail and sharper boundaries compared to bicubic interpolation  
+- Consistent reconstruction across spectral bands  
+- Physically meaningful super-resolution validated using independent EMIT observations 
 
+
+### Qualitative Evaluation (GT–SHR Setting)
+
+<p align="center">
+  <img src="../images/GT_SHR.png" width="900"/>
+</p>
+
+<p align="center">
+<em>Qualitative comparison across multiple spectral bands. The proposed method produces sharper spatial details and consistent reconstruction across bands compared to bicubic interpolation.</em>
+</p>
+
+---
+
+### Cross-Sensor Validation (EMIT vs S5P)
+
+<p align="center">
+  <img src="../images/EMIT.png" width="700"/>
+</p>
+
+<p align="center">
+<em>Comparison with EMIT hyperspectral data demonstrates that reconstructed structures are physically meaningful rather than hallucinated.</em>
+</p>
 ---
 
 ## Citation
