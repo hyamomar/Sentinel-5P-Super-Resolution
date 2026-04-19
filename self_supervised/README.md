@@ -58,6 +58,9 @@ We introduce U-Net–based architectures tailored for hyperspectral data, incorp
 <p align="center">
   <img src="Images/Unet_S5P.png" width="750"/>
 </p>
+<p align="center">
+  <img src="Images/Unet_S5P.png" width="700"/>
+</p>
 
 <p align="center">
   <img src="..self_supervised/Iunet_v2.png" width="750"/>
@@ -96,6 +99,9 @@ The proposed approach achieves:
 
 <p align="center">
   <img src="Images/GT_SHR.png" width="900"/>
+</p>
+<p align="center">
+  <img src="Images/GT_SHR.png" width="700"/>
 </p>
 
 <p align="center">
