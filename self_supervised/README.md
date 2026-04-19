@@ -56,7 +56,7 @@ Training is performed using a composite self-supervised loss that combines:
 We introduce U-Net–based architectures tailored for hyperspectral data, incorporating Depthwise Separable Convolutions (DSC) for efficient feature extraction and improved spectral fidelity.
 
 <p align="center">
-  <img src="..self_supervised/Images/global.png" width="750"/>
+  <img src="Images/Unet-S5P.png" width="750"/>
 </p>
 
 <p align="center">
@@ -95,7 +95,7 @@ The proposed approach achieves:
 ### Qualitative Evaluation (GT–SHR Setting)
 
 <p align="center">
-  <img src="..self_supervised/Images/GT-SHR.png" width="900"/>
+  <img src="Images/GT-SHR.png" width="900"/>
 </p>
 
 <p align="center">
