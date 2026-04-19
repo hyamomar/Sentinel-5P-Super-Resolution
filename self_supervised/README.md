@@ -56,11 +56,11 @@ Training is performed using a composite self-supervised loss that combines:
 We introduce U-Net–based architectures tailored for hyperspectral data, incorporating Depthwise Separable Convolutions (DSC) for efficient feature extraction and improved spectral fidelity.
 
 <p align="center">
-  <img src="../images/global.png" width="750"/>
+  <img src="..self_supervised/Images/global.png" width="750"/>
 </p>
 
 <p align="center">
-  <img src="../images/unet_v2.png" width="750"/>
+  <img src="..self_supervised/Iunet_v2.png" width="750"/>
 </p>
 
 The model follows a residual learning strategy, refining bicubic upsampled inputs to recover high-frequency spatial details.
@@ -95,7 +95,7 @@ The proposed approach achieves:
 ### Qualitative Evaluation (GT–SHR Setting)
 
 <p align="center">
-  <img src="../images/GT_SHR.png" width="900"/>
+  <img src="..self_supervised/Images/GT-SHR.png" width="900"/>
 </p>
 
 <p align="center">
@@ -107,7 +107,7 @@ The proposed approach achieves:
 ### Cross-Sensor Validation (EMIT vs S5P)
 
 <p align="center">
-  <img src="../images/EMIT.png" width="700"/>
+  <img src="..self_supervised/Images/EMIT.png" width="700"/>
 </p>
 
 <p align="center">
