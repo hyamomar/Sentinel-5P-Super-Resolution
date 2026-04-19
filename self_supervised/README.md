@@ -107,7 +107,7 @@ The proposed approach achieves:
 ### Cross-Sensor Validation (EMIT vs S5P)
 
 <p align="center">
-  <img src="..self_supervised/Images/EMIT.png" width="700"/>
+  <img src="self_supervised/Images/EMIT.png" width="700"/>
 </p>
 
 <p align="center">
