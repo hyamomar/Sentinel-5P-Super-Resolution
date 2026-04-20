@@ -49,7 +49,7 @@ It includes both a **supervised framework** and a **self-supervised extension** 
 <p align="center"><strong>Available on arXiv</strong></p>
 
 <p align="center">
-  <img src="self-supervised/Images/GT_SHR.png" width="900"/>
+  <img src="self_supervised/Images/GT_SHR.png" width="900"/>
 </p>
 
 <p align="center">
@@ -60,8 +60,8 @@ It includes both a **supervised framework** and a **self-supervised extension** 
 
 ## Explore the Repository
 
-- 🔹 Supervised implementation → `supervised/`  
-- 🔹 Self-supervised framework → `self_supervised/`  
+- Supervised implementation → `supervised/`  
+- Self-supervised framework → `self_supervised/`  
 
 ---
 
