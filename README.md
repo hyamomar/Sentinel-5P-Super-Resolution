@@ -29,7 +29,7 @@ It includes both a **supervised framework** and a **self-supervised extension** 
 <p align="center"><strong>Published at IGARSS 2025</strong></p>
 
 <p align="center">
-  <img src="images/SR_results.png" width="750"/>
+  <img src="supervised/images/SR_results.png" width="750"/>
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@ It includes both a **supervised framework** and a **self-supervised extension** 
 <p align="center"><strong>Available on arXiv</strong></p>
 
 <p align="center">
-  <img src="images/GT_SHR.png" width="900"/>
+  <img src="self-supervised/Images/GT_SHR.png" width="900"/>
 </p>
 
 <p align="center">
